@@ -11,11 +11,11 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('comment__replies', function (Blueprint $table) {
+        Schema::create('comment_replies', function (Blueprint $table) {
             $table->id();
             $table->foreignId('comment_id')->constrained();
             $table->foreignId('user_id')->constrained();
-            $table->tinyText('message');
+            $table->tinyText('comment');
             $table->timestamps();
         });
     }

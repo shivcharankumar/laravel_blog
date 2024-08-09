@@ -5,9 +5,8 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Comment_Replies extends Model
+class CommentReply extends Model
 {
     use HasFactory;
-
-    protected $fillable = ['user_id','comment_id','message'];
+    protected $fillable = ['user_id','comment_id','comment'];
 }
